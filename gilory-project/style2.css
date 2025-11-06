@@ -1,0 +1,26 @@
+body{
+   background-color:aqua;
+   font-family:Arial, Helvetica, sans-serif;
+}
+h1{
+    color:yellow;
+    text-align:center;
+    padding:20px;
+}
+p{
+background-color: white;
+color: black;
+font-weight: bold;
+text-align: center;
+padding: 30px;
+border: 3px solid orange;
+}
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: teal;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}

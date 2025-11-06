@@ -1,0 +1,66 @@
+/* Page background */
+body {
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Ground area */
+.ground {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  border-bottom: 4px solid #fff;
+}
+
+/* The Ball */
+.ball {
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle at 30% 30%, #ffeb3b, #f57f17);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 1.5s ease-in-out infinite;
+}
+
+/* Shadow under ball */
+.shadow {
+  width: 60px;
+  height: 15px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: shadowBounce 1.5s ease-in-out infinite;
+}
+
+/* Ball Animation */
+@keyframes bounce {
+  0%, 100% {
+    bottom: 0;
+    transform: translateX(-50%) scaleY(0.8); /* squash */
+  }
+  50% {
+    bottom: 200px;
+    transform: translateX(-50%) scaleY(1.1); /* stretch */
+  }
+}
+
+/* Shadow Animation */
+@keyframes shadowBounce {
+  0%, 100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateX(-50%) scale(0.5);
+    opacity: 0.3;
+  }
+}

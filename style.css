@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url('fonts/Gilroy-Light.otf') format('opentype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('fonts/Gilroy-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+  background-color: #f8f8f8;
+  color: #222;
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 2.5em;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+button {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 800;
+  padding: 10px 20px;
+  border: none;
+  background-color: #222;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+body{
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+@keyframes movebox {
+  from { transform: translate(0px);
+       background-color: skyblue;
+}
+  to { transform: translate(200px); 
+background-color: orange;
+}
+}
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: tomato;
+border-radius: 100px;
+
+     animation-name: movebox;    /* animation name */
+  animation-duration: 3s;         /* how long it runs */
+  animation-iteration-count: infinite; /* repeat forever */
+  animation-direction: alternate; /* back and forth */
+ animation-timing-function: ease-in-out;
+} 
